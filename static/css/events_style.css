@@ -1,0 +1,174 @@
+/*
+root 
+    /*FONT SIZE
+    text-sm 1.2rem
+    text-base 1.6rem
+    -text-paragraph 2rem
+    --text-h5 2.4rem
+    --text-h4 3.2rem
+    --text-h3 4rem
+    --text-h2 4.8rem
+    --text-h1 6.2rem
+  
+    /* FONT WEIGHT 
+    --font-weight-normal 400
+    --font-weight-bold 700
+  */
+    /* LINE HEIGHTS 
+    --Line-height-tight 1.2
+    --line-height-normal 1.5
+  */
+    /* LETTER SPACING 
+    --letter-spacing-tight -2px
+  */
+    /* FONT FAMILY 
+    --font-family 'Poppins'
+  */
+    /* PRIMARY (Doğa Temsilcisi) 
+  --primary-base #2b8a3e       yaprak yeşili 
+  --primary-tint #409651        açık nane yeşili 
+  --primary-shade #1e6f2f      koyu çimen yeşili */
+  
+  /* SECONDARY (Gökyüzü & Temizlik) 
+  --secondary-base #4dabf7      açık mavi 
+  --secondary-tint #e7f5ff      çok açık mavi 
+  --secondary-shade #1971c2     derin gökyüzü mavisi */
+  
+  /* TERTIARY (Pozitiflik & Enerji) 
+  --tertiary-base #f59f00       güneş sarısı 
+  --tertiary-tint #fff3bf      açık sarı 
+  --tertiary-shade #c37c00     turuncuya çalan sarı */
+  
+  /* GREYSCALE (Arka plan, yazı vb.) 
+  --grey-base #495057          nötr gri 
+  --grey-tint #f8f9fa         çok açık gri 
+  --grey-shade #212529        neredeyse siyah */
+  
+  /* Diğer 
+  --white #ffffff
+  --black #000000
+  
+    MISCELLANEOUS 
+    --nav-height 6rem
+  
+
+  */
+.event-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4rem;
+    background-color: var(--primary-tint3);
+    box-shadow: 0 0 5px var(--grey-base);
+    margin-bottom: 3rem;
+    padding: 2rem 3rem;
+}
+
+.event-box-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-tint);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.event-box-user {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.event-box-head > p {
+  padding: 1rem 2rem;
+}
+
+.user-pp {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-right: 1rem;
+    border: 2px solid var(--primary-base);
+}
+
+.event-box-title {
+  margin: 1rem 0px;
+}
+
+.event-box-description {
+  margin-bottom: 1rem;
+}
+
+
+
+/*----- EVENT DETAILS -----*/
+.event-details-title {
+  margin: 1.5rem 0px;
+}
+
+.event-details-description {
+  margin-bottom: 2rem;
+}
+
+.event-photo-map {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+#map {
+  width: 100%;
+  height: 40rem;
+  border-radius: 1rem;
+}
+
+.photo-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 40rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--primary-tint3);
+}
+
+.photo-slider img {
+  width: 100%;
+  border-radius: 1rem;
+  display: block;
+}
+
+.photo-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.photo-slider button:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+#prevPhoto {
+  left: 1rem;
+}
+
+#nextPhoto {
+  right: 1rem;
+}
